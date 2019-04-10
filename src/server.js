@@ -4,6 +4,7 @@ const path = require("path");
 const cors = require("cors");
 
 const app = express();
+app.use(cors());
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 
@@ -22,8 +23,6 @@ mongoose.connect(
     useNewUrlParser: true
   }
 );
-
-app.use(cors);
 
 //middleware para acessar o io
 app.use((req, res, next) => {
