@@ -13,8 +13,8 @@ routes.get("/boxes/:id", BoxController.show)
 
 routes.post("/boxes/:id/files", multer(multerConfig).single("file"), FileController.store)
 
-// routes.get('/teste', (req, res) => {
-//     return res.send('hello')
-// })
+routes.get('/teste', (req, res) => {
+    return res.send('hello')
+})
 
 module.exports = routes;
