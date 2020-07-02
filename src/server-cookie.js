@@ -45,7 +45,7 @@ app.get('/foods', (req, res) => {
   res.json(foods);
 });
 
-app.listen(3001);
+app.listen(process.env.PORT || 3333);
 console.log(
   'Cookie App running on https://omnistack-frontend-1.herokuapp.com/'
 );
