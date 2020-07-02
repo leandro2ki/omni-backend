@@ -11,7 +11,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: 'https://omnistack-frontend-1.herokuapp.com/',
+    origin: 'https://omnistack-backend-1.herokuapp.com/',
     credentials: true,
   })
 );
